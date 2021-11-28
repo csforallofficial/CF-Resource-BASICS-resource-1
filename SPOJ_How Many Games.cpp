@@ -55,6 +55,18 @@ long long gcd(long long a, long long b)
 		return gcd(b, a % b);
 }
 
+/*
+For example N = 4.50, integral value = 4  and  fractional part = 0.50 
+           
+Consider precision value to be (109) that is precision value = 1000000000 
+           
+Calculate GCD(0.50 *  109, 109) = 500000000 
+           
+Calculate numerator = (0.50 * 10^9) / 500000000 = 1 and denominator = 10^9/ 500000000 = 2 
+           
+Convert mixed fraction into improper fraction that is fraction = ((4 * 2) + 1) / 2 = 9/2 
+*/
+
 void solve(double number)
 {
 	double intVal = floor(number);
